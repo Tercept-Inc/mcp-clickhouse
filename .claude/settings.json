@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(aws:*)",
+      "Read(~/.aws/**)",
+      "Read(**/.aws/credentials)",
+
+      "Bash(gh pr merge:*)",
+      "Bash(gh pr review --approve:*)",
+      "Bash(gh api -X PUT */pulls/*/merge*)",
+      "Bash(gh api -X POST */pulls/*/reviews*)",
+
+      "Bash(git branch -D:*)",
+      "Bash(git push:*--delete*)",
+      "Bash(gh api -X DELETE */git/refs/heads/*)",
+      "Bash(gh api -X DELETE */git/refs/tags/*)",
+
+      "Bash(gh repo delete:*)",
+      "Bash(gh api -X DELETE repos/*)",
+
+      "Bash(gh api -X DELETE repos/*/collaborators/*)",
+      "Bash(gh api -X DELETE orgs/*/members/*)"
+    ]
+  }
+}
