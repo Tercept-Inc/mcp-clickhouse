@@ -3,33 +3,30 @@
     "deny": [
       "Bash(aws:*)",
       "Read(**/.aws/**)",
+      "Read(//**/.aws/**)",
       "Read(**/.aws/credentials)",
 
       "Bash(gh pr merge:*)",
       "Bash(gh pr review *--approve*)",
       "Bash(gh api -X PUT */pulls/*/merge*)",
+      "Bash(gh api */pulls/*/merge* -X PUT*)",
       "Bash(gh api --method PUT */pulls/*/merge*)",
+      "Bash(gh api */pulls/*/merge* --method PUT*)",
       "Bash(gh api -X POST */pulls/*/reviews*)",
+      "Bash(gh api */pulls/*/reviews* -X POST*)",
       "Bash(gh api --method POST */pulls/*/reviews*)",
+      "Bash(gh api */pulls/*/reviews* --method POST*)",
 
       "Bash(git branch -D:*)",
       "Bash(git branch -d -f:*)",
       "Bash(git branch --delete --force:*)",
       "Bash(git push *--delete*)",
-      "Bash(git push *-d*)",
-      "Bash(gh api -X DELETE */git/refs/heads/*)",
-      "Bash(gh api --method DELETE */git/refs/heads/*)",
-      "Bash(gh api -X DELETE */git/refs/tags/*)",
-      "Bash(gh api --method DELETE */git/refs/tags/*)",
+      "Bash(git push * -d *)",
+      "Bash(git push -d *)",
+      "Bash(gh api * -X DELETE*)",
+      "Bash(gh api * --method DELETE*)",
 
-      "Bash(gh repo delete:*)",
-      "Bash(gh api -X DELETE repos/*)",
-      "Bash(gh api --method DELETE repos/*)",
-
-      "Bash(gh api -X DELETE repos/*/collaborators/*)",
-      "Bash(gh api --method DELETE repos/*/collaborators/*)",
-      "Bash(gh api -X DELETE orgs/*/members/*)",
-      "Bash(gh api --method DELETE orgs/*/members/*)"
+      "Bash(gh repo delete:*)"
     ]
   }
 }
