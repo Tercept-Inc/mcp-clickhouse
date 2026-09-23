@@ -11,7 +11,7 @@
       "Bash(gh api -X POST */pulls/*/reviews*)",
 
       "Bash(git branch -D:*)",
-      "Bash(git push:*--delete*)",
+      "Bash(git push *--delete*)",
       "Bash(gh api -X DELETE */git/refs/heads/*)",
       "Bash(gh api -X DELETE */git/refs/tags/*)",
 
