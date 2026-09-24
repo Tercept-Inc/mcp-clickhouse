@@ -1,0 +1,45 @@
+{
+  "permissions": {
+    "deny": [
+      "Bash(aws:*)",
+      "Read(//**/.aws/**)",
+      "Read(//**/.config/gh/hosts.yml)",
+      "Read(//**/.git-credentials)",
+      "Bash(gh auth token*)",
+      "Edit(//**/.claude/settings*.json)",
+
+      "Bash(gh pr merge:*)",
+      "Bash(gh pr review *--approve*)",
+      "Bash(gh pr review * -a*)",
+      "Bash(gh pr review -a*)",
+      "Bash(gh api *pulls/*/merge*)",
+      "Bash(gh api *pulls/*/reviews*APPROVE*)",
+      "Bash(gh api *pulls/*/reviews*approve*)",
+      "Bash(gh api *pulls/*/reviews*--input*)",
+      "Bash(gh api *DELETE*)",
+      "Bash(gh api *PUT*)",
+      "Bash(gh api *PATCH*)",
+      "Bash(gh api graphql*mutation*)",
+      "Bash(curl *api.github.com*)",
+
+      "Bash(gh repo delete:*)",
+      "Bash(gh repo edit:*)",
+      "Bash(gh repo archive:*)",
+      "Bash(gh repo rename:*)",
+      "Bash(gh release delete:*)",
+      "Bash(gh secret set:*)",
+      "Bash(gh secret delete:*)",
+      "Bash(gh variable set:*)",
+      "Bash(gh variable delete:*)",
+
+      "Bash(git *branch -D*)",
+      "Bash(git *branch -d -f*)",
+      "Bash(git *branch --delete --force*)",
+
+      "Bash(git *push*--delete*)",
+      "Bash(git *push* -d *)",
+      "Bash(git *push*--prune*)",
+      "Bash(git *push*--mirror*)"
+    ]
+  }
+}
